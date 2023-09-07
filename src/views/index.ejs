@@ -1,0 +1,15 @@
+<script src="https://unpkg.com/htmx.org@1.9.5"></script>
+<script src="https://unpkg.com/htmx.org/dist/ext/json-enc.js"></script>
+
+<form hx-post="/hello" hx-target="#response" hx-ext="json-enc">
+    <label>
+        What's your name?
+        <input type="text" name="name" />
+    </label>
+
+    <button type="submit">
+        Click Me
+    </button>
+</form>
+<div id="response"></div>
+
